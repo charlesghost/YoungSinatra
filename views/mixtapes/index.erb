@@ -1,0 +1,8 @@
+<h1>List your favourite mixtape!</h1>
+
+<% @mixtapes.each do |mixtape| %>
+<div>
+  <h3><a href="/<%= mixtape.id %>"><%= mixtape.title %></a></h3>
+  <p><%= mixtape.body %></p>
+</div>
+<% end %>
