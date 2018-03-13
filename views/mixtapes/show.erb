@@ -1,9 +1,3 @@
 <h1><%= @mixtape.title %></h1>
 <p><%= @mixtape.body %></p>
 <a href="/<%= @mixtape.id %>/edit">edit</a>
-<div>
-   <input type="submit" value="delete">
- </div>
- <% if(@mixtape.id != "")%>
-    <input type="hidden" name="_method" value="delete">
- <% end %>

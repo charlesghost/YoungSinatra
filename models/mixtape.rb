@@ -40,8 +40,8 @@ class Mixtape
     	conn = self.open_connection
 
     	sql = "SELECT * FROM mixtape WHERE id = #{id} LIMIT 1"
-    	mixtapes = conn.exec(sql)
-        mixtape = self.hydrate mixtapes[0]
+    	result = conn.exec(sql)
+        mixtape = self.hydrate(result[0])
 
         mixtape
 
@@ -71,5 +71,6 @@ class Mixtape
     	conn.exec(sql)
 
     end
+end
 
 end 

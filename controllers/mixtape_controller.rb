@@ -16,7 +16,7 @@ class MixtapeController < Sinatra::Base
 
   	@mixtapes = Mixtape.all
 
-  	erb :'/mixtapes/index'
+  	erb :'mixtapes/index'
 
   end
 
@@ -51,7 +51,7 @@ class MixtapeController < Sinatra::Base
 
   	@mixtape = Mixtape.find(id)
 
-  	erb :'/mixtapes/show'
+  	erb :'mixtapes/show'
 
 
   end 
@@ -62,7 +62,7 @@ class MixtapeController < Sinatra::Base
 
   	@mixtape = Mixtape.find(id)
 
-  	erb :'/mixtapes/show' 
+  	erb :'mixtapes/edit' 
 
   end 
 
