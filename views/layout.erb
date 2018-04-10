@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @title %></title>
+</head>
+<body>
+  
+   <%= erb(:'partials/navigation', :layout => false) %>
+  
+   <!-- our template content will be injected here -->
+   <%= yield %>
+
+</body>
+</html>
